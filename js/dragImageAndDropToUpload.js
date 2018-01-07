@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$(".dropArea").on('dragenter', function (e){
 	e.preventDefault();
-	$(this).css('background', '#BBD5B8');
+//	$(this).css('background', '#BBD5B8');
 	});
 
 	$(".dropArea").on('dragover', function (e){
@@ -9,7 +9,7 @@ $(document).ready(function() {
 	});
 
 	$(".dropArea").on('drop', function (e){
-	$(this).css('background', '#D8F9D3');
+//	$(this).css('background', '#D8F9D3');
 	e.preventDefault();
 	var image = e.originalEvent.dataTransfer.files;
 	createFormData(image);
