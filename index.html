@@ -16,7 +16,9 @@
         <script src="https://mindmup.github.io/bootstrap-wysiwyg/external/jquery.hotkeys.js"></script>
         <script src="https://mindmup.github.io/bootstrap-wysiwyg/external/google-code-prettify/prettify.js"></script>
         <link href="https://mindmup.github.io/bootstrap-wysiwyg/index.css" rel="stylesheet">
-        <script src="https://mindmup.github.io/bootstrap-wysiwyg/bootstrap-wysiwyg.js"></script>
+        <!--<script src="https://mindmup.github.io/bootstrap-wysiwyg/bootstrap-wysiwyg.js"></script>-->
+        <script src="js/bootstrap-wysiwyg.js"></script>
+        <script src="js/dragImageAndDropToUpload.js"></script>
 
     </head>
     <body>
@@ -79,7 +81,9 @@
             <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="" style="display: none;">
         </div>
 
-        <div id="editor" contenteditable="true"></div>
+        <div id="editor" class="dropArea" contenteditable="true">
+            
+        </div>
 
         <script>
             $(function () {
