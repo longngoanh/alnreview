@@ -1,0 +1,33 @@
+CREATE TABLE IF NOT EXISTS article (
+    articleID INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+    writerID INT(6) NOT NULL,    
+    title VARCHAR(255) NOT NULL,
+    briefContent VARCHAR(255) NOT NULL,
+    category TINYINT NOT NULL,
+    timeWriting TIMESTAMP NOT NULL  DEFAULT NOW(),
+    content TEXT NOT NULL,
+    likeNum INT(6) NOT NULL DEFAULT 0,
+    commentNum INT(6) NOT NULL DEFAULT 0,
+    viewNum INT(6) NOT NULL DEFAULT 0,
+    tags VARCHAR(255) NOT NULL, 
+    visibilityToUser TINYINT NOT NULL DEFAULT 1
+);
+
+CREATE TABLE IF NOT EXISTS images (
+    imageID INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+    employeeID INT(6) NOT NULL,
+    uploadTime TIMESTAMP NOT NULL  DEFAULT NOW(),
+    imageType TINYINT NOT NULL,
+    visibilityToUser TINYINT NOT NULL DEFAULT 1
+);
+
+CREATE TABLE IF NOT EXISTS employee ( 
+    EmployeeID INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+    IPAddress VARCHAR(16) NOT NULL,
+    EmployeeName VARCHAR(32) NOT NULL,
+    EmployeeGroup TINYINT NOT NULL,
+    AvartaID INT(6) NOT NULL,
+    dateOfBirth TIMESTAMP NOT NULL,
+    hometown VARCHAR(50) NOT NULL DEFAULT '',
+    workFromDate TIMESTAMP NOT NULL DEFAULT NOW()
+);

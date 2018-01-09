@@ -1,0 +1,27 @@
+.bgcolor {
+    background-color: #d5d5d5;
+}
+
+.main-content{
+    background-color: white;
+}
+
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+
+.carousel-caption h3 {
+    color: #fff !important;
+}
+
+.footer{
+    margin-top: 10px;
+    padding: 30px 20px;
+    background-color: #122b40;
+    color: whitesmoke;
+}
+
+.carousel{
+    margin-top: 50px;
+}
